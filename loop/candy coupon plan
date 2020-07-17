@@ -1,0 +1,14 @@
+rmb =100
+wrappers =0
+eaten =0
+
+while rmb >0:
+    rmb -=1
+    eaten +=1
+    wrappers +=1
+
+    if wrappers ==3:
+        wrappers -=3
+        eaten +=1
+        wrappers +=1
+print("Answer:", eaten)
