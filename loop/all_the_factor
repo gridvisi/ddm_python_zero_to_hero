@@ -1,0 +1,7 @@
+def primeFactors(n):
+    s,re = 0,[]
+    for i in range(2, round(n ** 0.5)):
+        if n % i == 0:
+            re.append(i)
+            re.append(n // i)
+    return sorted(re)
